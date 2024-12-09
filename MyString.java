@@ -79,6 +79,7 @@ public class MyString {
         {
             str2 += str.charAt(i) + " ";
         }
+        str2 += str.charAt(str.length()-1);
         return str2;
     }
   
