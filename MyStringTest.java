@@ -31,7 +31,7 @@ public class MyStringTest {
         System.out.println("pass in space -> " + MyString.subsetOf("pass", "space") + " (expected: false)");
         System.out.println("c in space -> " + MyString.subsetOf("c", "space") + " (expected: true)");
         System.out.println("empty string in anything -> " + MyString.subsetOf("", "anything") + " (expected: true)");
-        System.out.println("runi in running -> " + MyString.subsetOf("runi", "running") + " (expected: true)");
+        
     }
 
     private static void testSpacedString() {

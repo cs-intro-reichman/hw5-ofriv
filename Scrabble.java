@@ -95,7 +95,6 @@ public class Scrabble {
 		String hand = MyString.randomStringOfLetters(HAND_SIZE - 2);
 		hand = MyString.insertRandomly('e', hand);
 		hand = MyString.insertRandomly('a', hand);
-		System.out.println(hand);
 		return hand;
 	}
 	
@@ -154,18 +153,11 @@ public class Scrabble {
 			String input = in.readString();
 			if(input.equals("n"))
 			{
-
-			playHand(createHand());
+				playHand(createHand());
 			// Gets the user's input, which is all the characters entered by 
 			// the user until the user enter the ENTER character.
 			System.out.println("Enter n to deal a new hand, or e to end the game:");
 			input = in.readString();
-			if(input.equals("e"))
-			{
-				break;
-			}
-			//// Replace the following break statement with code
-			//// that completes the game playing loop
 			}
 			if(input.equals("e"))
 			{
